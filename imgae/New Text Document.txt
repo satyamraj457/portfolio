@@ -1,0 +1,22 @@
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> services</h1>
+            <div class="services-list">
+                <div>
+                    <h2> Web design</h2>
+                    <p> learning continusly for better understanding </p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2> App development</h2>
+                    <p> learning continusly for better understanding</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>problem solving coder</h2>
+                    <p> learning continusly for better understanding</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+      </div>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>personal portfolio website</title>
+        <link rel="stylesheet"href="style.css">
+        <script src="https://kit.fontawesome.com/526b713e79.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container"></div>
+            <nav>
+                <img src="imgae/unnamed.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                   
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>C++,Java developer</p>
+                <h1>Hi,I'm<span> Satyam</span> Raj From India</h1>
+            </div>
+        </div>
+     </div>
+      <!-------------about---------->
+      <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="About-col-1">
+                    <img src="imgae/WhatsApp Image 2024-01-14 at 15.52.22_9eb09cd5.jpg">
+                </div>
+                <div class="About-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a diploma holder with internship experience in fine tools pvt Ltd as junior production engineer. 
+                        currently I am a Cse student pursuing btech in TIT bhopal. I am developing strong interpesonal and communicating skills to interact and effectively work with many different individuals.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"onclick="opentab('skills')">skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>C++/Java</span><br>Developer</li>
+                        <li><span>web development</span><br>  Web Development</li>
+                        <li><span>App development</span><br>App Developer</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>currently</span><br>BHARAT INTERN</li>
+                        <li><span>internship</span><br>Fine tools pvt ltd</li>
+                        <li><span>contests</span><br>codechef</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018</span><br>MATRICULATION FROM C.B.S.E</li>
+                        <li><span>2020</span><br> INTERMEDIAT FROM B.S.E.B</li>
+                        <li><span>2022</span><br>DIPLOMA IN PLASTICS MOULD TECHNOLOGY FROM CIPET RANCHI</li>
+                    </ul>
+                </div>
+               </div>
+            </div>
+        </div>
+        <!--------------------sevices--------------------------------->
+        
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title"> services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2> Web Design</h2>
+                        <p> learning continusly for better understanding. It is immportant to learn and work together as there is a saying that 'practice makes a man perfect'.so improve yourself to do better morecurrently I am a Cse student pursuing btech in TIT bhopal. I am developing strong interpesonal and communicating skills to interact and effectively work with many different individuals</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2> App Development</h2>
+                        <p> learning continusly for better understandingIt is immportant to learn and work together as there is a saying that 'practice makes a man perfect'.so improve yourself to do bettercurrently I am a Cse student pursuing btech in TIT bhopal. I am developing strong interpesonal and communicating skills to interact and effectively work with many different individuals.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>Problem Solving</h2>
+                        <p> learning continusly for better understandingIt is immportant to learn and work together as there is a saying that 'practice makes a man perfect'.so improve yourself to do bettercurrently I am a Cse student pursuing btech in TIT bhopal. I am developing strong interpesonal and communicating skills to interact and effectively work with many different individuals.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-----------portfolio---------------------------------------------->
+        <div id="portfolio">
+           <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="wprk list">
+                <div class="work">
+                   <img src="imgae/pngwing.com (12).png">
+                </div>
+            </div>
+           </div>
+        </div>
+        
+        
+        <script>
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontents=document.getElementsByClassName("tab-contents");
+            function opentab(tabname)
+            {
+                for(tablink of tablinks)
+                {
+                    tablink.classList.remove("active-link")
+                }
+                for(tabcontent of tabcontents)
+                {
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
+    </body>
+</html>
